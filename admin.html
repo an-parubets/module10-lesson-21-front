@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin-bottom: 24px;
+        }
+
+        .article {
+            display: flex;
+            background: #f1f1f1;
+            padding: 16px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="POST">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="author" placeholder="Author">
+
+        <textarea name="description" id="" cols="30" rows="10" placeholder="Description"></textarea>
+
+        <button>Save</button>
+    </form>
+
+    <div id="root"></div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
